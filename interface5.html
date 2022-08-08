@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ΕΠΙΚΟΙΝΩΝΙΑ</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" /> 
+        <script type = module src="Header.js"></script>
+        <script type = module src="Footer.js"></script>
+    </head>
+    <body>
+        <my-header class=" my-header"></my-header>
+        <div class="interface5">
+            <div class="form6-grid">
+                <form class="second-form" id="contact" action="contact.php" method="post" style="background-color: aliceblue">
+                    <h3 style="text-align: center;padding-top:2%;padding-bottom: 2%;">ΦΟΡΜΑ ΥΠΟΒΟΛΗΣ ΣΤΟΙΧΕΙΩΝ</h3>
+                    <input class="sos" type="text" id="fullname" name="fullname" placeholder="Δώστε παρακαλώ το ονοματεπώνυμο σας"/>
+                    <input  class="sos input-interface6" type="tel"  id="phone" name="phone" pattern="[0-9]{10}" placeholder="Δώστε παρακαλώ το τηλέφωνο σας"/>
+                    <input  class="sos input-interface6" type="email"  id="email" name="email" placeholder="Δώστε παρακαλώ το email σας"/>
+                    <input class="sos input6"  type="text"  id="subject" name="subject" placeholder="Δώστε παρακαλώ το θέμα σας" />
+                    <!-- <label for="message">Παρακαλώ εισάγεται το μήνυμά σας:</label> -->
+                    <textarea id="message"  id="message" name="message" rows="25" cols="150" placeholder="Παρακαλώ εισάγεται το μήνυμά σας"></textarea>
+                    <div class="grid-div6"> 
+                        <button  class="button5" type="submit" >ΥΠΟΒΟΛΗ</button>
+                    </div> 
+                </form>
+            </div>
+            <div class="footer-div">
+                <my-footer class="my-footer"></my-footer>
+            </div>
+        </div>
+    </body>
+</html>

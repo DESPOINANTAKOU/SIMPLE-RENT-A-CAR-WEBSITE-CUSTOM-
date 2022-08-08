@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>our-image-gallery</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" /> 
+        <script type = module src="Header.js"></script>
+        <script type = module src="Footer.js"></script>
+        <script src="calculationOfService.js"></script>
+    </head>
+    <body >
+        <my-header class=" my-header"></my-header>
+        <div class="form">
+            <h4 class="form-h4">ΦΟΡΜΑ ΕΙΣΑΓΩΓΗΣ ΣΤΟΙΧΕΙΩΝ</h4>
+            <div class="form-divs">
+                <label id="l1" class="label">ΗΛΙΚΙΑ</label>
+                <input class="input-interface5" id = "hlikia" type ='text' placeholder="Παρακαλώ δώστε την ηλικία σας!"/>
+            </div>
+            <div class="form-divs">
+                <label id="l2" class="label">ΚΥΒΙΚΑ</label>
+                <input class="input-interface5"  id = "kuvika" type ='text' placeholder="Παρακαλώ δώστε τα κυβικά του αυτοκινήτου σας!"/>
+            </div>
+            <div class="form-divs last-one">
+                <label  id="l3" class="label">ΗΜΕΡΕΣ</label>
+                <input  class="input-interface5" id = "hmeres" type ='number' placeholder="Παρακαλώ δώστε τις ημέρες δανεισμού!"/>
+            </div>
+            <button id="calculation-button" onClick = "Calculation()" type = "submit" >Υπολογισμός Κόστους Ενοικίασης Αυτοκινήτου</button>
+            <div id="output"></div>
+        </div>
+        <div class="footer-div">
+            <my-footer class="my-footer"></my-footer>
+        </div>
+    </body>
+</html>
